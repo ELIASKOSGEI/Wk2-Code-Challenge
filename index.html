@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Shopping List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #shopping-list {
+      list-style: none;
+      padding: 0;
+    }
+    #shopping-list li {
+      padding: 8px;
+      margin: 5px 0;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #shopping-list li.purchased {
+      text-decoration: line-through;
+      background: #d4edda;
+    }
+    .edit-btn, .delete-btn {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive Shopping List</h1>
+  <input type="text" id="item-input" placeholder="Add an item..." />
+  <button id="add-btn">Add</button>
+  <button id="clear-btn">Clear List</button>
+  <ul id="shopping-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
